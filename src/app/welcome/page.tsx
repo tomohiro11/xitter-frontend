@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import Button from '@/ui/button';
 
 export default function Welcome() {
@@ -9,9 +11,11 @@ export default function Welcome() {
         </h1>
         
         <div className="flex flex-col gap-4 items-center"> 
-          <Button>
-            Create Account
-          </Button>
+          <Link href="/create-account">
+            <Button>
+              Create Account
+            </Button>
+          </Link>
           <Button>
             Login
           </Button>
